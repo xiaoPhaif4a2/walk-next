@@ -1,6 +1,6 @@
 import { QueryCache, QueryClient, type QueryClientConfig } from "@tanstack/vue-query";
 
-const ONE_SECOND = 1 * 1000;
+export const ONE_SECOND = 1 * 1000;
 
 const globalQueryClientConfig: QueryClientConfig = {
   queryCache: new QueryCache({

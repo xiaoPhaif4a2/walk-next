@@ -43,7 +43,9 @@ const emit = defineEmits<{
   retry: [];
 }>();
 
+/** 点击重试按钮 */
 const handleRetry = () => {
+  // 向父组件发出事件，父组件使用v-on监听后绑定刷新函数
   emit("retry");
 };
 </script>
